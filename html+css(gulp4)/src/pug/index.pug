@@ -1,0 +1,246 @@
+---
+title: Home page
+classDetails: section details
+classReview: section review
+classOffers: section-border-top offers
+---
+extends layouts/layout
+block content
+	.main
+		.main__center.center
+			.main__wrap
+				.stage Train smarter. get stronger
+				h1.main__title.h1 Simple fitness experience for everyone.
+				.main__text Track your workouts, get better results, and be the bestversion of you. Less thinking, more lifting.
+				.main__btns
+					a.button.main__button(href="download.html") Download App
+					a.button-stroke.main__button(href="class02-details.html") Book a Class
+			+scroll('steps')
+			.main__gallery
+				.main__preview(data-aos="animation-translate-up" data-aos-anchor=".main__gallery")
+					img.some-icon(srcSet="img/content/watch@2x.png 2x"
+						src="img/content/watch.png"
+						alt="Watch")
+					img.some-icon-dark(srcSet="img/content/watch-dark@2x.png 2x"
+						src="img/content/watch-dark.png"
+						alt="Watch")
+				.main__preview(data-aos="animation-translate-up" data-aos-delay="600" data-aos-anchor=".main__gallery")
+					img(srcSet="img/content/ball@2x.png 2x"
+						src="img/content/ball.png"
+						alt="Ball")
+				.main__preview(data-aos="animation-translate-up" data-aos-delay="300" data-aos-anchor=".main__gallery")
+					img(srcSet="img/content/bottle@2x.png 2x"
+						src="img/content/bottle.png"
+						alt="Bottle")
+				.main__preview(data-aos="animation-translate-up" data-aos-delay="900" data-aos-anchor=".main__gallery")
+					img(srcSet="img/content/ball-black@2x.png 2x"
+						src="img/content/ball-black.png"
+						alt="Ball black")
+	include partials/clients
+	.section.steps#steps
+		.steps__center.center
+			.steps__head
+				h2.steps__title.h2 How it works
+				.steps__info Stacks is a production-ready library of stackable content blocks built in React Native.
+			.steps__list
+				.steps__item(data-aos="animation-opacity")
+					.steps__preview(style="background-color: #3772FF;")
+						img(src="img/content/download.svg" alt="Step 1")
+					.steps__number Step 1
+					.steps__subtitle Download
+					.steps__content Fitness Pro tracks your workouts, get better results, and be the best version of you.
+				.steps__item(data-aos="animation-opacity")
+					.steps__preview(style="background-color: #9757D7;")
+						img(src="img/content/whistle.svg" alt="Step 2")
+					.steps__number Step 2
+					.steps__subtitle Choose your trainner
+					.steps__content Fitness Pro tracks your workouts, get better results, and be the best version of you.
+				.steps__item(data-aos="animation-opacity")
+					.steps__preview(style="background-color: #EF466F;")
+						img(src="img/content/medal.svg" alt="Step 3")
+					.steps__number Step 3
+					.steps__subtitle Set the goals
+					.steps__content Fitness Pro tracks your workouts, get better results, and be the best version of you.
+				.steps__item(data-aos="animation-opacity")
+					.steps__preview(style="background-color: #45B26B;")
+						img(src="img/content/stopwatch.svg" alt="Step 4")
+					.steps__number Step 4
+					.steps__subtitle Workout time
+					.steps__content Fitness Pro tracks your workouts, get better results, and be the best version of you.
+	include partials/intro
+	.section-bg.book
+		.book__center.center
+			.book__gallery
+				.book__preview
+					img.some-icon(srcSet="img/content/book-pic@2x.png 2x"
+						src="img/content/book-pic.png"
+						alt="Book pic")
+					img.some-icon-dark(srcSet="img/content/book-pic-dark@2x.png 2x"
+						src="img/content/book-pic-dark.png"
+						alt="Book pic")
+				.book__preview(data-aos="animation-translate-up" data-aos-anchor=".book__gallery")
+					img(srcSet="img/content/ball@2x.png 2x"
+						src="img/content/ball.png"
+						alt="Ball")
+				.book__preview(data-aos="animation-translate-up" data-aos-delay="300" data-aos-anchor=".book__gallery")
+					img(srcSet="img/content/ball-green@2x.png 2x"
+						src="img/content/ball-green.png"
+						alt="Ball")
+				.book__preview(data-aos="animation-translate-up" data-aos-delay="600" data-aos-anchor=".book__gallery")
+					img(srcSet="img/content/dumbbells@2x.png 2x"
+						src="img/content/dumbbells.png"
+						alt="Dumbbells")
+			.book__wrap
+				h2.book__title.h2 Book a class
+				.book__info Track your workouts, get better results, and be the best version of you. Less thinking, more lifting.
+				.book__list
+					.book__item
+						.book__icon(style="background-color: #45B26B;")
+							img(src="img/content/user.svg" alt="User")
+						.book__details
+							.book__subtitle For the beginners
+							.book__content You never workout before, it’s now a good start
+					.book__item
+						.book__icon(style="background-color: #9757D7;")
+							img(src="img/content/medal-1.svg" alt="Medal")
+						.book__details
+							.book__subtitle Advanced classes
+							.book__content You never workout before, it’s now a good start
+					.book__item
+						.book__icon(style="background-color: #3772FF;")
+							img(src="img/content/lightning.svg" alt="Lightning")
+						.book__details
+							.book__subtitle Premium (limited)
+							.book__content You never workout before, it’s now a good start
+				.book__note <strong class="book__green">10% Discount</strong> if you’re already using the <strong class="book__black">Fitness Pro</strong> on App Store
+				.book__btns
+					a.button.book__button(href="class02-details.html") Book a class
+						+i('arrow-right')
+	include partials/details
+	.section-border-top.about
+		.about__center.center
+			.about__row
+				.about__col
+					.stage fitness pro
+				.about__col
+					h2.about__title.h2 Simple, powerful, <br>easy-to-use
+					.about__info Track your workouts, get better results, and be the best version of you. Less thinking, more lifting.
+			.about__row
+				.about__col
+					.about__list
+						.about__item(data-aos="animation-opacity")
+							.about__number(style="background-color: #9757D7;") 01
+							.about__subtitle Intuitive and clean design
+							.about__content Track your workouts, get better results, and be the best version of you.
+						.about__item(data-aos="animation-opacity")
+							.about__number(style="background-color: #EF466F;") 02
+							.about__subtitle An exercise in simplicity
+							.about__content Track your workouts, get better results, and be the best version of you.
+						.about__item(data-aos="animation-opacity")
+							.about__number(style="background-color: #45B26B;") 03
+							.about__subtitle The most popular workouts
+							.about__content Track your workouts, get better results, and be the best version of you.
+				.about__col
+					.about__bg
+						img(srcSet="img/content/about-pic@2x.png 2x"
+							src="img/content/about-pic.png"
+							alt="About pic")
+						.about__preview(data-aos="animation-translate-up")
+							img(srcSet="img/content/plate@2x.png 2x"
+								src="img/content/plate.png"
+								alt="Plate")
+						button.play
+							+i('play')
+	.team.js-tabs
+		.team__center.center
+			.team__head
+				h2.team__title.h2 Meet our pro trainers
+				.team__info From all over the world, we select and provide you a team of seasoned trainers. What's more, the 1-on-1 live practice mode helps you quickly get great results.
+				.team__nav
+					a.team__link.js-tabs-link(href="#") Yoga
+					a.team__link.js-tabs-link(href="#") Fitness & Gym
+					a.team__link.js-tabs-link(href="#") Gymnastics
+					a.team__link.js-tabs-link(href="#") Running
+				select.select.js-tabs-select
+					option Yoga
+					option Fitness & Gym
+					option Gymnastics
+					option Running
+			.team__container
+				.team__box.js-tabs-item
+					.team__wrap
+						.team__slider.js-tabs-slider
+							mixin teamSlide(avatar, man, position)
+								.team__slide(data-aos="animation-opacity")
+									a.team__item.js-popup-open(href="#popup-trainer")
+										.team__avatar
+											img(src=avatar alt="Avatar")
+										.team__man=man
+										.team__position=position
+							+teamSlide("img/content/avatar-1.png", "Baron Toy", "Yoga Master")
+							+teamSlide("img/content/avatar-2.png", "Kacie Kiehn", "Personal Trainer")
+							+teamSlide("img/content/avatar-3.png", "Marcelino Hettinger", "Boxer")
+							+teamSlide("img/content/avatar-4.png", "Rosemarie Hintz", "Business Analytic")
+							+teamSlide("img/content/avatar-5.png", "Syble Prohaska", "Business Analytic")
+							+teamSlide("img/content/avatar-6.png", "Ila Reinger", "Business Analytic")
+				.team__box.js-tabs-item
+					.team__wrap
+						.team__slider.js-tabs-slider
+							+teamSlide("img/content/avatar-2.png", "Kacie Kiehn", "Personal Trainer")
+							+teamSlide("img/content/avatar-3.png", "Marcelino Hettinger", "Boxer")
+							+teamSlide("img/content/avatar-4.png", "Rosemarie Hintz", "Business Analytic")
+							+teamSlide("img/content/avatar-5.png", "Syble Prohaska", "Business Analytic")
+				.team__box.js-tabs-item
+					.team__wrap
+						.team__slider.js-tabs-slider
+							+teamSlide("img/content/avatar-5.png", "Syble Prohaska", "Business Analytic")
+							+teamSlide("img/content/avatar-1.png", "Baron Toy", "Yoga Master")
+							+teamSlide("img/content/avatar-2.png", "Kacie Kiehn", "Personal Trainer")
+							+teamSlide("img/content/avatar-3.png", "Marcelino Hettinger", "Boxer")
+							+teamSlide("img/content/avatar-4.png", "Rosemarie Hintz", "Business Analytic")
+				.team__box.js-tabs-item
+					.team__wrap
+						.team__slider.js-tabs-slider
+							+teamSlide("img/content/avatar-1.png", "Baron Toy", "Yoga Master")
+							+teamSlide("img/content/avatar-2.png", "Kacie Kiehn", "Personal Trainer")
+							+teamSlide("img/content/avatar-3.png", "Marcelino Hettinger", "Boxer")
+							+teamSlide("img/content/avatar-4.png", "Rosemarie Hintz", "Business Analytic")
+							+teamSlide("img/content/avatar-5.png", "Syble Prohaska", "Business Analytic")
+							+teamSlide("img/content/avatar-6.png", "Ila Reinger", "Business Analytic")
+	include partials/review
+	.section-pb.quality
+		.quality__center.center
+			.quality__list
+				.quality__item(data-aos="animation-opacity")
+					.quality__preview
+						img(src="img/content/user-green.svg" alt="User")
+					.quality__counter 1m
+					.quality__title Happy Users
+					.quality__content Stacks is a production-ready library of stackable content blocks built in React Native.
+				.quality__item(data-aos="animation-opacity")
+					.quality__preview
+						img(src="img/content/electrical-plug.svg" alt="Electrical Plug")
+					.quality__counter 1.2m
+					.quality__title Downloads
+					.quality__content Stacks is a production-ready library of stackable content blocks built in React Native.
+				.quality__item(data-aos="animation-opacity")
+					.quality__preview
+						img(src="img/content/flag.svg" alt="Flag")
+					.quality__counter 50+
+					.quality__title Countries
+					.quality__content Stacks is a production-ready library of stackable content blocks built in React Native.
+				.quality__item(data-aos="animation-opacity")
+					.quality__preview
+						img(src="img/content/facebook.svg" alt="Facebook")
+					.quality__counter 900k+
+					.quality__title Likes on Facebook
+					.quality__content Stacks is a production-ready library of stackable content blocks built in React Native.
+	include partials/advantages
+	include partials/workouts
+	include partials/offers
+	+popupTrainer
+
+
+
+
+

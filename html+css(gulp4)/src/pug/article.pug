@@ -1,0 +1,44 @@
+---
+title: Article
+classReview: section-bg review
+---
+extends layouts/layout
+block content
+	.section.article
+		.article__center.center
+			.article__head
+				h1.article__title.h1 Stories from Fitness Pro community.
+				button.button-circle-stroke.article__button 
+					+i('download')
+			.article__row
+				.article__col
+					.article__preview
+						img(src="img/content/history-pic.png" alt="People")
+				.article__col
+					h2.article__title.h2 As easy as hitting play
+					.article__info The Stacks series of products: Stacks: Landing Page Kit, Stacks: Portfolio Kit, Stacks: eCommerce Kit. "Stacks is a production-ready library of stackable content blocks built in React Native.
+					.article__preview
+						img(src="img/content/post-pic.png" alt="Post")
+					.article__content
+						p The Stacks series of products: Stacks: Landing Page Kit, Stacks: Portfolio Kit, Stacks: eCommerce Kit. "Stacks is a production-ready library of stackable content blocks built in React Native.
+						p Mix-and-match dozens of responsive elements to quickly configure your favorite landing page layouts or hit the ground running with 10 pre-built templates, all in light or dark mode."
+	include partials/review
+	.section.story
+		.story__center.center
+			.stage-small yoga story
+			.story__row
+				.story__col
+					.story__preview
+						img(src="img/content/story-pic.png" alt="")
+				.story__col
+					h2.story__title.h2 What is Sweet and tone
+					.story__info The Stacks series of products: Stacks: Landing Page Kit, Stacks: Portfolio Kit, Stacks: eCommerce Kit. "Stacks is a production-ready library of stackable content blocks built in React Native.
+					.story__list
+						.story__item(data-aos="animation-opacity")
+							.story__category How it work
+							.story__content Mix-and-match dozens of responsive elements to quickly configure your favorite landing page layouts
+						.story__item(data-aos="animation-opacity")
+							.story__category About the trainers
+							.story__content Mix-and-match dozens of responsive elements to quickly configure your favorite landing page layouts
+					a.button-stroke.story__button(href="class02.html") Go to class
+

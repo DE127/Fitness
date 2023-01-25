@@ -1,0 +1,100 @@
+mixin i(name)
+	svg.icon(class='icon-' + name)
+		use(xlink:href='#icon-' + name)
+
+mixin scroll(anchor)
+	a.scroll.js-scroll(href=`#${anchor}`)
+		.scroll__line
+			+i('arrow-down')
+			+i('arrow-down')
+
+mixin theme
+	label.theme.js-theme
+		input.theme__input(type="checkbox")
+		span.theme__inner
+			span.theme__box
+			span.theme__icon
+				+i('moon')
+				+i('sun')
+
+mixin subscription(placeholder)
+	form.subscription
+		input.subscription__input(type="email" placeholder=placeholder required)
+		button.subscription__btn
+			+i('arrow-right')
+
+mixin card(srcSet, src, classStatus, status, play, avatar, title, trainer, classLevel, level, counterVideo, counterUser)
+	a.card(href="class01-details.html" data-aos="animation-opacity")
+		.card__preview
+			img(srcSet=`${srcSet} 2x`
+				src=src
+				alt=status)
+			div(class=classStatus)=status
+			if play
+				div.play-small
+					+i('play')
+		.card__head
+			.card__user
+				.card__avatar
+					img(src=avatar alt="Avatar")
+				.card__details
+					.card__title=title
+					.card__trainer=trainer
+			div(class=classLevel)=level
+		.card__parameters
+			.card__parameter
+				+i('button-play')
+				=counterVideo
+			.card__parameter
+				+i('user')
+				=counterUser
+
+mixin popupTrainer
+	.popup.popup_trainer.mfp-hide#popup-trainer
+		.trainer
+			.trainer__avatar
+				img(src="img/content/avatar-5.png" alt="Avatar")
+			.trainer__name.h3 Johathan Kula
+			.trainer__position Personal trainer
+			.trainer__socials
+				a.trainer__social(href="https://facebook.com" target="_blank")
+					+i('facebook')
+				a.trainer__social(href="https://instagram.com" target="_blank")
+					+i('instagram')
+				a.trainer__social(href="https://twitter.com" target="_blank")
+					+i('twitter')
+				a.trainer__social(href="https://linkedin.com" target="_blank")
+					+i('linkedin')
+			+subscription("Find a class")
+			.trainer__wrap
+				.trainer__slider.js-slider-trainer
+					.trainer__slide
+						mixin trainerItem(srcSet, src, classStatus, status, title, classLevel, level, counterVideo, counterUser)
+							a.trainer__item(href="class01-details.html")
+								.trainer__preview
+									img(srcSet=`${srcSet} 2x`
+										src=src
+										alt=status)
+									div(class=classStatus)=status
+								.trainer__head
+									.trainer__title=title 
+									div(class=classLevel)=level
+								.trainer__parameters
+									.trainer__parameter
+										+i('button-play')
+										=counterVideo
+									.trainer__parameter
+										+i('user')
+										=counterUser
+						+trainerItem("img/content/card-pic-1.png", "img/content/card-pic-1@2x.png", "status-white trainer__category", "yoga", "Power Yoga Sculpt", "status-stroke-green trainer__level", "beginner", "7", "160")
+					.trainer__slide
+						+trainerItem("img/content/card-pic-2.png", "img/content/card-pic-2@2x.png", "status-white trainer__category", "fitness", "Power Yoga Sculpt", "status-stroke-green trainer__level", "beginner", "7", "160")
+					.trainer__slide
+						+trainerItem("img/content/card-pic-3.png", "img/content/card-pic-3@2x.png", "status-white trainer__category", "yoga", "Power Yoga Sculpt", "status-stroke-green trainer__level", "beginner", "7", "160")
+					.trainer__slide
+						+trainerItem("img/content/card-pic-4.png", "img/content/card-pic-4@2x.png", "status-white trainer__category", "fitness", "Power Yoga Sculpt", "status-stroke-green trainer__level", "beginner", "7", "160")
+			.trainer__btns
+				button.button-small.trainer__button Browse all class
+
+
+

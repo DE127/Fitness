@@ -1,0 +1,161 @@
+---
+title: Features
+classFeatures: active
+classDetails: section-pb details
+classReview: section-pb64 review
+classOffers: section offers
+---
+extends layouts/layout
+block content
+	.main1
+		.main1__center.center
+			.main1__wrap
+				.stage Train smarter. get stronger
+				h1.main1__title.h1 Simple fitness experience for everyone.
+				.main1__text Track your workouts, get better results, and be the bestversion of you. Less thinking, more lifting.
+				.main1__btns
+					a.button.main1__button(href="download.html") Download App
+					a.button-stroke.main1__button(href="class02-details.html") Book a Class
+			+scroll('intro')
+			.main1__gallery
+				.main1__preview
+					img.some-icon(srcSet="img/content/main-pic@2x.png 2x"
+						src="img/content/main-pic.png"
+						alt="Main")
+					img.some-icon-dark(srcSet="img/content/main-pic-dark@2x.png 2x"
+						src="img/content/main-pic-dark.png"
+						alt="Main")
+				.main1__preview(data-aos="animation-translate-up" data-aos-anchor=".main1__gallery")
+					img(srcSet="img/content/ball@2x.png 2x"
+						src="img/content/ball.png"
+						alt="Ball")
+				.main1__preview(data-aos="animation-translate-up" data-aos-delay="400" data-aos-anchor=".main1__gallery")
+					img(srcSet="img/content/ball-black@2x.png 2x"
+						src="img/content/ball-black.png"
+						alt="Ball black")
+	include partials/intro
+	include partials/details
+	.section-bg.program
+		.program__center.center
+			.program__wrap
+				.program__col
+					.stage-small explore fitness pro program
+					.program__list
+						a.program__item(href='class01.html')
+							.program__icon(style="background-color: #45B26B;")
+								img(src="img/content/lightning.svg" alt="Lightning")
+							.program__subtitle Program Videos
+							.program__arrow
+								+i('arrow-right-empty')
+						a.program__item(href='class02.html')
+							.program__icon(style="background-color: #9757D7;")
+								img(src="img/content/lightning.svg" alt="Lightning")
+							.program__subtitle Premium Class
+							.program__arrow
+								+i('arrow-right-empty')
+						a.program__item(href='class02.html')
+							.program__icon(style="background-color: #3772FF;")
+								img(src="img/content/lightning.svg" alt="Lightning")
+							.program__subtitle Exclusive Trainers
+							.program__arrow
+								+i('arrow-right-empty')
+				.program__col
+					.program__preview
+						img(srcSet="img/content/bottle-2@2x.png 2x"
+							src="img/content/bottle-2.png"
+							alt="Bottle")
+					.program__info Stacks is a production-ready library of stackable content blocks built in React Native
+					a.button.program__button(href="class02-details.html") Book a class
+	.section-border-top.about
+		.about__center.center
+			.about__row
+				.about__col
+					.stage fitness pro
+				.about__col
+					h2.about__title.h2 Simple, powerful, <br>easy-to-use
+					.about__info Track your workouts, get better results, and be the best version of you. Less thinking, more lifting.
+			.about__row
+				.about__col
+					.about__list
+						.about__item(data-aos="animation-opacity")
+							.about__number(style="background-color: #9757D7;") 01
+							.about__subtitle Intuitive and clean design
+							.about__content Track your workouts, get better results, and be the best version of you.
+						.about__item(data-aos="animation-opacity")
+							.about__number(style="background-color: #EF466F;") 02
+							.about__subtitle An exercise in simplicity
+							.about__content Track your workouts, get better results, and be the best version of you.
+						.about__item(data-aos="animation-opacity")
+							.about__number(style="background-color: #45B26B;") 03
+							.about__subtitle The most popular workouts
+							.about__content Track your workouts, get better results, and be the best version of you.
+				.about__col
+					.about__bg.about__bg_overflow
+						img(srcSet="img/content/about-pic-1@2x.png 2x"
+							src="img/content/about-pic-1.png"
+							alt="About pic")
+						.about__group
+							.about__photo(data-aos="animation-translate-up" data-aos-delay="400")
+								img.some-icon(srcSet="img/content/racket@2x.png 2x"
+									src="img/content/racket.png"
+									alt="Racket")
+								img.some-icon-dark(srcSet="img/content/racket-dark@2x.png 2x"
+									src="img/content/racket-dark.png"
+									alt="Racket")
+							.about__photo(data-aos="animation-translate-up")
+								img(srcSet="img/content/ball-red@2x.png 2x"
+									src="img/content/ball-red.png"
+									alt="Ball")
+						button.play
+							+i('play')
+	include partials/review
+	include partials/clients
+	include partials/workouts
+	.section-pb.lifestyle
+		.lifestyle__center.center
+			.lifestyle__head
+				.stage-small explore the app
+				h2.lifestyle__title.h2 Fit for your life style
+				.lifestyle__info Get started with two free weeks of unlimited yoga, fitness, and meditation classes.
+				a.button-stroke.lifestyle__button(href="class02-details.html") Join a class today
+					+i('arrow-right')
+			.lifestyle__wrap
+				.lifestyle__slider.js-slider-mobile-one.js-slider-resize
+					.lifestyle__row(data-aos="animation-opacity")
+						.lifestyle__col
+							.lifestyle__details
+								.lifestyle__number 01.
+								.lifestyle__category The Fitness Pro Philosophy
+								.lifestyle__content Whether you’re a complete beginner or you want to step up your routine, get the full studio experience at home with thousands of classes for body, mind.
+						.lifestyle__col
+							.lifestyle__preview
+								img(srcSet="img/content/lifestyle-pic-1@2x.png 2x"
+									src="img/content/lifestyle-pic-1.png"
+									alt="Lifestyle Pic")
+					.lifestyle__row(data-aos="animation-opacity")
+						.lifestyle__col
+							.lifestyle__details
+								.lifestyle__number 02.
+								.lifestyle__category Quickly find the class you want
+								.lifestyle__content Whether you’re a complete beginner or you want to step up your routine, get the full studio experience at home with thousands of classes for body, mind.
+						.lifestyle__col
+							.lifestyle__preview
+								img(srcSet="img/content/lifestyle-pic-2@2x.png 2x"
+									src="img/content/lifestyle-pic-2.png"
+									alt="Lifestyle Pic")
+					.lifestyle__row(data-aos="animation-opacity")
+						.lifestyle__col
+							.lifestyle__details
+								.lifestyle__number 03.
+								.lifestyle__category Keep track of calories & macros
+								.lifestyle__content Whether you’re a complete beginner or you want to step up your routine, get the full studio experience at home with thousands of classes for body, mind.
+						.lifestyle__col
+							.lifestyle__preview
+								img(srcSet="img/content/lifestyle-pic-3@2x.png 2x"
+									src="img/content/lifestyle-pic-3.png"
+									alt="Lifestyle Pic")
+	include partials/advantages
+	include partials/offers
+
+
+	

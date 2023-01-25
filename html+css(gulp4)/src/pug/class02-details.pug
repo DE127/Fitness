@@ -1,0 +1,132 @@
+---
+title: Class02 Details
+classClass: active
+classClass02: active
+---
+extends layouts/layout
+block content
+	.section-pb.portfolio
+		.portfolio__center.center
+			.portfolio__top
+				.status-green.portfolio__status limited premium class
+				h1.portfolio__title.h1 Premium Class
+				.portfolio__info A 7-days training program designed to boost your strength & endurance over the course of a week.
+			.portfolio__gallery
+				.portfolio__preview(data-aos="animation-translate-up" data-aos-anchor=".portfolio__gallery")
+					img.some-icon(srcSet="img/content/watch@2x.png 2x"
+						src="img/content/watch.png"
+						alt="Watch")
+					img.some-icon-dark(srcSet="img/content/watch-dark@2x.png 2x"
+						src="img/content/watch-dark.png"
+						alt="Watch")
+				.portfolio__preview(data-aos="animation-translate-up" data-aos-delay="300" data-aos-anchor=".portfolio__gallery")
+					img(srcSet="img/content/ball@2x.png 2x"
+						src="img/content/ball.png"
+						alt="Ball")
+				.portfolio__preview(data-aos="animation-translate-up" data-aos-delay="600" data-aos-anchor=".portfolio__gallery")
+					img(srcSet="img/content/bottle@2x.png 2x"
+						src="img/content/bottle.png"
+						alt="Bottle")
+				.portfolio__preview(data-aos="animation-translate-up" data-aos-delay="900" data-aos-anchor=".portfolio__gallery")
+					img(srcSet="img/content/ball-black@2x.png 2x"
+						src="img/content/ball-black.png"
+						alt="Ball")
+			.portfolio__row
+				.portfolio__trainer
+					.status-green.portfolio__status exclusive trainer
+					.portfolio__avatar
+						img(src="img/content/avatar-3.png" alt="Avatar")
+					.portfolio__man Dariana Hammes
+					.portfolio__position Yoga Master
+				.portfolio__wrap
+					.portfolio__list
+						.portfolio__item
+							.portfolio__icon
+								+i('calendar')
+							.portfolio__parameter Time
+							.portfolio__content 7 days
+						.portfolio__item
+							.portfolio__icon
+								+i('clock')
+							.portfolio__parameter Average duration
+							.portfolio__content 20 minutes
+						.portfolio__item
+							.portfolio__icon
+								+i('scoreboard')
+							.portfolio__parameter Difficulty
+							.portfolio__content(style="color: #45B26B;") Beginner
+						.portfolio__item
+							.portfolio__icon
+								+i('candlesticks')
+							.portfolio__parameter Intensity
+							.portfolio__content Level 2
+					.portfolio__note A seven-day bodyweight training program designed to boost your strength and endurance over the course of a week.
+				.portfolio__details
+					.portfolio__head
+						+i('calendar')
+						| Work-out time
+					.portfolio__body
+						.portfolio__control
+							button.portfolio__prev
+								+i('arrow-prev')
+							.portfolio__date Friday, March 5, 2021
+							button.portfolio__next
+								+i('arrow-next')
+						.portfolio__variants
+							button.portfolio__variant 07:00 AM
+							button.portfolio__variant 11:00 AM
+							button.portfolio__variant More
+						.portfolio__btns
+							button.button-circle-stroke.portfolio__button
+								+i('lock')
+							button.button.portfolio__button Book Now
+	.section-pb.programs
+		.programs__center.center
+			.programs__top
+				h2.programs__title.h2 You may interested
+				.programs__info <strong class="programs__green">10% Discount</strong> if you’re already using the <strong class="programs__black">Fitness Pro</strong> on App Store
+			.programs__wrap
+				.programs__slider.js-slider-programs
+					.programs__slide(data-aos="animation-opacity")
+						.programs__item
+							.programs__icon(style="background-color: #45B26B;")
+								img(src="img/content/user.svg" alt="User")
+							.programs__subtitle Beginners
+							.programs__content A 7-days training program designed to boost your strength & endurance over the course of a week.
+							a.button-stroke.programs__button(href="class02-details.html") Book a class
+					.programs__slide(data-aos="animation-opacity")
+						.programs__item
+							.programs__icon(style="background-color: #9757D7;")
+								img(src="img/content/medal-1.svg" alt="Medal")
+							.programs__subtitle Advanced
+							.programs__content A 7-days training program designed to boost your strength & endurance over the course of a week.
+							a.button-stroke.programs__button(href="class02-details.html") Book a class
+					.programs__slide(data-aos="animation-opacity")
+						.programs__item
+							.programs__icon(style="background-color: #3772FF;")
+								img(src="img/content/lightning.svg" alt="Lightning")
+							.programs__subtitle Premium
+							.programs__content A 7-days training program designed to boost your strength & endurance over the course of a week.
+							a.button-stroke.programs__button(href="class02-details.html") Book a class
+					.programs__slide(data-aos="animation-opacity")
+						.programs__item
+							.programs__icon(style="background-color: #45B26B;")
+								img(src="img/content/user.svg" alt="User")
+							.programs__subtitle Beginners
+							.programs__content A 7-days training program designed to boost your strength & endurance over the course of a week.
+							a.button-stroke.programs__button(href="class02-details.html") Book a class
+					.programs__slide(data-aos="animation-opacity")
+						.programs__item
+							.programs__icon(style="background-color: #9757D7;")
+								img(src="img/content/medal-1.svg" alt="Medal")
+							.programs__subtitle Advanced
+							.programs__content A 7-days training program designed to boost your strength & endurance over the course of a week.
+							a.button-stroke.programs__button(href="class02-details.html") Book a class
+					.programs__slide(data-aos="animation-opacity")
+						.programs__item
+							.programs__icon(style="background-color: #3772FF;")
+								img(src="img/content/lightning.svg" alt="Lightning")
+							.programs__subtitle Premium
+							.programs__content A 7-days training program designed to boost your strength & endurance over the course of a week.
+							a.button-stroke.programs__button(href="class02-details.html") Book a class
+	

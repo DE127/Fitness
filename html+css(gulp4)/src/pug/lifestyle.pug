@@ -1,0 +1,100 @@
+---
+title: Lifestyle
+classLifestyle: active
+---
+extends layouts/layout
+block content
+	.section.post
+		.post__center.center
+			h1.post__title.hero Lifestyle
+			.post__info Track your workouts, get better results, and be the best version of you. Less thinking, more lifting.
+			.history
+				.history__wrap
+					.history__slider.js-slider-history
+						.history__slide
+							.history__item
+								.history__preview(style="background-image: url('img/content/history-pic.png');")
+								.history__details
+									.status-pink.history__status new
+									.history__title Stories From Our Community: Kohaku & Moyo Shiro
+									.history__content Track your workouts, get better results, and be the best version of you. Less thinking
+									a.button-small.history__button(href="article.html") Read full story
+						.history__slide
+							.history__item
+								.history__preview(style="background-image: url('img/content/history-pic.png');")
+								.history__details
+									.status-green.history__status yoga
+									.history__title Stories From Our Community: Kohaku & Moyo Shiro
+									.history__content Track your workouts, get better results, and be the best version of you. Less thinking
+									a.button-small.history__button(href="article.html") Read full story
+						.history__slide
+							.history__item
+								.history__preview(style="background-image: url('img/content/history-pic.png');")
+								.history__details
+									.status-pink.history__status new
+									.history__title Stories From Our Community: Kohaku & Moyo Shiro
+									.history__content Track your workouts, get better results, and be the best version of you. Less thinking
+									a.button-small.history__button(href="article.html") Read full story
+						.history__slide
+							.history__item
+								.history__preview(style="background-image: url('img/content/history-pic.png');")
+								.history__details
+									.status-green.history__status yoga
+									.history__title Stories From Our Community: Kohaku & Moyo Shiro
+									.history__content Track your workouts, get better results, and be the best version of you. Less thinking
+									a.button-small.history__button(href="article.html") Read full story
+			.post__tabs.js-tabs
+				.post__nav
+					a.post__link.js-tabs-link.active(href="#") Lifestyle
+					a.post__link.js-tabs-link(href="#") Fitness
+					a.post__link.js-tabs-link(href="#") Mindfulness
+				.post__container
+					.post__box.js-tabs-item
+						.post__list
+							mixin postItem(srcSet, src, classStatus, status, subtitle, avatar, author, date)
+								a.post__item(href="article.html" data-aos="animation-opacity")
+									.post__preview
+										img(srcSet=`${srcSet} 2x`
+											src=src
+											alt=status)
+									div(class=classStatus)=status
+									.post__subtitle=subtitle
+									.post__foot
+										.post__user
+											.post__avatar
+												img(src=avatar alt="Avatar")
+											.post__author=author
+										.post__date=date
+							+postItem("img/content/lifestyle-photo-1@2x.png", "img/content/lifestyle-photo-1.png", "status-red post__status", "fitness", "7 Impossibly Hard Yoga Moves to Master", "img/content/avatar-5.png", "Porter Daniel", "Feb 03, 2021")
+							+postItem("img/content/lifestyle-photo-2@2x.png", "img/content/lifestyle-photo-2.png", "status-green post__status", "yoga", "Keep It Chill: How To Do a Water Salutation", "img/content/avatar-2.png", "Clemens Reilly", "Feb 03, 2021")
+							+postItem("img/content/lifestyle-photo-3@2x.png", "img/content/lifestyle-photo-3.png", "status-pink post__status", "new", "Keep It Chill: How To Do a Water Salutation", "img/content/avatar-3.png", "Lorine Parker", "Feb 03, 2021")
+							+postItem("img/content/lifestyle-photo-4@2x.png", "img/content/lifestyle-photo-4.png", "status-black post__status", "featured", "7 Impossibly Hard Yoga Moves to Master", "img/content/avatar-1.png", "Felipa Kub", "Feb 03, 2021")
+							+postItem("img/content/lifestyle-photo-5@2x.png", "img/content/lifestyle-photo-5.png", "status-red post__status", "fitness", "Fun Pose Friday: Half Camel With Raised Toe Pose", "img/content/avatar-4.png", "Porter Daniel", "Feb 03, 2021")
+							+postItem("img/content/lifestyle-photo-6@2x.png", "img/content/lifestyle-photo-6.png", "status-green post__status", "fitness", "7 Impossibly Hard Yoga Moves to Master", "img/content/avatar-2.png", "Clemens Reilly", "Feb 03, 2021")
+						.post__btns
+							button.button-stroke.button-small.post__button Load more
+					.post__box.js-tabs-item
+						.post__list
+							+postItem("img/content/lifestyle-photo-2@2x.png", "img/content/lifestyle-photo-2.png", "status-green post__status", "yoga", "Keep It Chill: How To Do a Water Salutation", "img/content/avatar-2.png", "Clemens Reilly", "Feb 03, 2021")
+							+postItem("img/content/lifestyle-photo-3@2x.png", "img/content/lifestyle-photo-3.png", "status-pink post__status", "new", "Keep It Chill: How To Do a Water Salutation", "img/content/avatar-3.png", "Lorine Parker", "Feb 03, 2021")
+							+postItem("img/content/lifestyle-photo-4@2x.png", "img/content/lifestyle-photo-4.png", "status-black post__status", "featured", "7 Impossibly Hard Yoga Moves to Master", "img/content/avatar-1.png", "Felipa Kub", "Feb 03, 2021")
+							+postItem("img/content/lifestyle-photo-5@2x.png", "img/content/lifestyle-photo-5.png", "status-red post__status", "fitness", "Fun Pose Friday: Half Camel With Raised Toe Pose", "img/content/avatar-4.png", "Porter Daniel", "Feb 03, 2021")
+							+postItem("img/content/lifestyle-photo-6@2x.png", "img/content/lifestyle-photo-6.png", "status-green post__status", "fitness", "7 Impossibly Hard Yoga Moves to Master", "img/content/avatar-2.png", "Clemens Reilly", "Feb 03, 2021")
+						.post__btns
+							button.button-stroke.button-small.post__button Load more
+					.post__box.js-tabs-item
+						.post__list
+							+postItem("img/content/lifestyle-photo-4@2x.png", "img/content/lifestyle-photo-4.png", "status-black post__status", "featured", "7 Impossibly Hard Yoga Moves to Master", "img/content/avatar-1.png", "Felipa Kub", "Feb 03, 2021")
+							+postItem("img/content/lifestyle-photo-5@2x.png", "img/content/lifestyle-photo-5.png", "status-red post__status", "fitness", "Fun Pose Friday: Half Camel With Raised Toe Pose", "img/content/avatar-4.png", "Porter Daniel", "Feb 03, 2021")
+							+postItem("img/content/lifestyle-photo-2@2x.png", "img/content/lifestyle-photo-2.png", "status-green post__status", "yoga", "Keep It Chill: How To Do a Water Salutation", "img/content/avatar-2.png", "Clemens Reilly", "Feb 03, 2021")
+							+postItem("img/content/lifestyle-photo-3@2x.png", "img/content/lifestyle-photo-3.png", "status-pink post__status", "new", "Keep It Chill: How To Do a Water Salutation", "img/content/avatar-3.png", "Lorine Parker", "Feb 03, 2021")
+							+postItem("img/content/lifestyle-photo-4@2x.png", "img/content/lifestyle-photo-4.png", "status-black post__status", "featured", "7 Impossibly Hard Yoga Moves to Master", "img/content/avatar-1.png", "Felipa Kub", "Feb 03, 2021")
+							+postItem("img/content/lifestyle-photo-5@2x.png", "img/content/lifestyle-photo-5.png", "status-red post__status", "fitness", "Fun Pose Friday: Half Camel With Raised Toe Pose", "img/content/avatar-4.png", "Porter Daniel", "Feb 03, 2021")
+							+postItem("img/content/lifestyle-photo-6@2x.png", "img/content/lifestyle-photo-6.png", "status-green post__status", "fitness", "7 Impossibly Hard Yoga Moves to Master", "img/content/avatar-2.png", "Clemens Reilly", "Feb 03, 2021")
+						.post__btns
+							button.button-stroke.button-small.post__button Load more
+	include partials/community
+
+
+			
+				

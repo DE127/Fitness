@@ -1,0 +1,139 @@
+header.header.js-header
+	.header__center.center
+		a.header__logo(href="index.html")
+			img.some-icon(src="img/logo-dark.svg" alt="Fitness Pro")
+			img.some-icon-dark(src="img/logo-light.svg" alt="Fitness Pro")
+		.header__wrap.js-header-wrap
+			nav.header__nav
+				a.header__link(href="features.html" class=classFeatures) Features
+				a.header__link(href="pricing.html" class=classPricing) Pricing
+				a.header__link(href="download.html" class=classDownload) Download
+				.header__dropdown.js-header-dropdown(class=classClass)
+					.header__head.js-header-head Class
+						+i('arrow-bottom')
+					.header__body.js-header-body
+						.header__inner
+							.header__row
+								.header__col
+									a.header__direction(href="#")
+										.header__info Find a class to achieve your goals 🔥
+										.header__preview
+											img(srcSet="img/content/ball@2x.png 2x"
+												src="img/content/ball.png" 
+												alt="Ball")
+									.header__menu
+										a.header__box(href="class01.html" class=classClass01)
+											.header__icon
+												img(src="img/menu-video.svg" alt="Video")
+											.header__text Program Videos
+										a.header__box(href="class02.html" class=classClass02)
+											.header__icon
+												img(src="img/menu-class.svg" alt="Class")
+											.header__text Premium Class
+								.header__col
+									.header__line
+										.header__cell
+											a.header__card(href="class01-details.html")
+												.header__photo
+													img(srcSet="img/content/header-pic-1@2x.png 2x"
+														src="img/content/header-pic-1.png" 
+														alt="Header content")
+													.status-black.header__category featured class
+												.header__top
+													.header__user
+														.header__avatar
+															img(src="img/content/avatar-1.png" alt="Avatar")
+														.header__details
+															.header__title Sweet and Tone
+															.header__trainer Zack Beier
+													.status-stroke-green.header__level beginner
+												.header__content Sweet and Tone is a seven-day bodyweight training program designed to boost your strength and endurance over the course of a week.
+										.header__cell
+											a.header__item(href="class01-details.html")
+												.header__photo
+													img(srcSet="img/content/header-pic-2@2x.png 2x"
+														src="img/content/header-pic-2.png" 
+														alt="Header content")
+												.header__description
+													.status-green.header__category yoga
+													.header__user
+														.header__avatar
+															img(src="img/content/avatar-2.png" alt="Avatar")
+														.header__details
+															.header__title Sweet and Tone
+															.header__trainer Zack Beier
+											a.header__item(href="class01-details.html")
+												.header__photo
+													img(srcSet="img/content/header-pic-3@2x.png 2x"
+														src="img/content/header-pic-3.png" 
+														alt="Header content")
+												.header__description
+													.status-purple.header__category mindfulness
+													.header__user
+														.header__avatar
+															img(src="img/content/avatar-3.png" alt="Avatar")
+														.header__details
+															.header__title Sweet and Tone
+															.header__trainer Zack Beier
+											a.header__item(href="class01-details.html")
+												.header__photo
+													img(srcSet="img/content/header-pic-4@2x.png 2x"
+														src="img/content/header-pic-4.png" 
+														alt="Header content")
+												.header__description
+													.status-red.header__category fitness
+													.header__user
+														.header__avatar
+															img(src="img/content/avatar-4.png" alt="Avatar")
+														.header__details
+															.header__title Sweet and Tone
+															.header__trainer Zack Beier
+							.header__foot
+								.header__stage Pro Trainers
+								.header__list
+									.header__user
+										.header__avatar
+											img(src="img/content/avatar-1.png" alt="Avatar")
+										.header__details
+											.header__title Boyd Reinger
+											.header__trainer Personal trainer
+									.header__user
+										.header__avatar
+											img(src="img/content/avatar-2.png" alt="Avatar")
+										.header__details
+											.header__title Randal Jacobson
+											.header__trainer Personal trainer
+									.header__user
+										.header__avatar
+											img(src="img/content/avatar-3.png" alt="Avatar")
+										.header__details
+											.header__title Dwight Schamberger
+											.header__trainer Personal trainer
+									.header__user
+										.header__avatar
+											img(src="img/content/avatar-4.png" alt="Avatar")
+										.header__details
+											.header__title Omari Gulgowski
+											.header__trainer Personal trainer
+				a.header__link(href="lifestyle.html" class=classLifestyle) Lifestyle
+			.header__group
+				.header__contacts
+					.header__element
+						.header__subtitle Montanachester
+						.header__text 06787 Block Estates
+					.header__element
+						.header__subtitle Lake Gene
+						.header__text 167 Emard River
+					.header__element
+						.header__subtitle North Hassiefort
+						.header__text 032 Leonora Spurs
+				.header__socials
+					a.header__social(href="https://www.facebook.com/ui8.net/" target="_blank")
+						+i('facebook')
+					a.header__social(href="https://twitter.com/ui8" target="_blank")
+						+i('twitter')
+					a.header__social(href="https://www.instagram.com/ui8net/" target="_blank")
+						+i('instagram')
+				button.button-stroke.button-small.header__button Get free trial
+		button.button-stroke.button-small.header__button Get free trial
+		button.header__burger.js-header-burger

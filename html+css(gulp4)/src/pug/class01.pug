@@ -1,0 +1,79 @@
+---
+title: Class01
+classClass: active
+classClass01: active
+classTestimonials: section-pb testimonials js-tabs
+---
+extends layouts/layout
+block content
+	.breadcrumbs
+		.breadcrumbs__center.center
+			.breadcrumbs__wrap
+				h2.breadcrumbs__title.h2 Find a class to achieve your goals
+				.breadcrumbs__info Build your perfect workout with our pro trainers
+				ul.breadcrumbs__list
+					li.breadcrumbs__item
+						a.breadcrumbs__link(href="#") Class
+					li.breadcrumbs__item Program
+	.section-pb.catalog
+		.catalog__center.center
+			.catalog__head
+				.catalog__title Find a class that fit with you
+				form.catalog__search
+					input.catalog__input(type="text" placeholder="Find a class")
+					button.catalog__result
+						+i('search')
+			.catalog__wrap
+				.catalog__top
+					select.select
+						option Newest
+						option Olest
+					.catalog__nav
+						a.catalog__link.active(href="#") Yoga
+						a.catalog__link(href="#") Fitness & Gym
+						a.catalog__link(href="#") Mindfulness
+						a.catalog__link(href="#") Gymnastics
+					.catalog__filter
+						.catalog__text Filter
+						button.catalog__close
+							+i('close')
+				.catalog__sorting
+					.catalog__cell
+						.catalog__label Style
+						select.select
+							option AcroYoga
+							option Morning Yoga
+					.catalog__cell
+						.catalog__label time of day
+						select.select
+							option Morning
+							option Dinner
+							option Evening
+					.catalog__cell
+						.catalog__label DIFFICULTY
+						select.select
+							option Beginner
+							option Advanced
+							option Intermediate
+					.catalog__cell
+						.catalog__label INTENSITY
+						select.select
+							option Level
+							option Level 1
+							option Level 2
+			.catalog__list
+				+card("img/content/card-pic-1@2x.png", "img/content/card-pic-1.png", "status-green card__category", "yoga", false, "img/content/avatar-1.png", "7-days barre body", "First name Last name", "status-stroke-green card__level", "beginner", "7", "160")
+				+card("img/content/card-pic-2@2x.png", "img/content/card-pic-2.png", "status-red card__category", "fitness", true, "img/content/avatar-2.png", "Sweet and tone", "First name Last name", "status-stroke-red card__level", "Advanced", "7", "160")
+				+card("img/content/card-pic-3@2x.png", "img/content/card-pic-3.png", "status-red card__category", "fitness", false, "img/content/avatar-3.png", "Baseline Bootcamp", "First name Last name", "status-stroke-purple card__level", "Intermediate", "7", "160")
+				+card("img/content/card-pic-4@2x.png", "img/content/card-pic-4.png", "status-green card__category", "yoga", false, "img/content/avatar-4.png", "Beach run 7", "First name Last name", "status-stroke-green card__level", "beginner", "7", "160")
+				+card("img/content/card-pic-5@2x.png", "img/content/card-pic-5.png", "status-red card__category", "fitness", false, "img/content/avatar-5.png", "Train 360", "First name Last name", "status-stroke-purple card__level", "Intermediate", "7", "160")
+				+card("img/content/card-pic-6@2x.png", "img/content/card-pic-6.png", "status-green card__category", "yoga", false, "img/content/avatar-6.png", "Power Yoga Sculpt", "First name Last name", "status-stroke-red card__level", "Advanced", "7", "160")
+			.catalog__btns
+				button.button-stroke.catalog__button Discover more
+					+i('arrow-bottom')
+	include partials/testimonials
+
+
+
+
+

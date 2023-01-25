@@ -1,0 +1,95 @@
+---
+title: Class01 Details
+classClass: active
+classClass01: active
+---
+extends layouts/layout
+block content
+	.section.description
+		.description__center.center
+			.description__col
+				.description__details
+					.status-red.description__status fitness
+					.status-green.description__status new release
+				h2.description__title.h2 Sweet and tone
+				.description__info A 7-days training program designed to boost your strength & endurance over the course of a week.
+				.description__wrap
+					.description__slider.js-slider-description
+						.description__preview
+							img(srcSet="img/content/workout-pic@2x.png 2x"
+								src="img/content/workout-pic.png"
+								alt="Workout")
+							button.play
+								+i('play')
+						.description__preview
+							img(srcSet="img/content/workout-pic@2x.png 2x"
+								src="img/content/workout-pic.png"
+								alt="Workout")
+						.description__preview
+							img(srcSet="img/content/workout-pic@2x.png 2x"
+								src="img/content/workout-pic.png"
+								alt="Workout")
+							button.play
+								+i('play')
+						.description__preview
+							img(srcSet="img/content/workout-pic@2x.png 2x"
+								src="img/content/workout-pic.png"
+								alt="Workout")
+			.description__col
+				.description__group
+					.description__item
+						.description__icon
+							+i('calendar')
+						.description__parameter Classes
+						.description__content 7
+					.description__item
+						.description__icon
+							+i('clock')
+						.description__parameter Average duration
+						.description__content 20 minutes
+					.description__item
+						.description__icon
+							+i('scoreboard')
+						.description__parameter Difficulty
+						.description__content(style="color: #45B26B;") Beginner
+					.description__item
+						.description__icon
+							+i('candlesticks')
+						.description__parameter Intensity
+						.description__content Level 2
+				.description__text
+					p A seven-day bodyweight training program designed to boost your strength and endurance over the course of a week.
+					p In this series, you will:
+				ul.description__list
+					li Get a full strength and cardio workout — no equipment necessary
+					li Strengthen and tone your entire body
+					li Increase your balance, flexibility, and endurance
+				.description__btns
+					button.button-circle-stroke.description__button
+						+i('lock')
+					button.button.description__button Start my free trial
+	.section-pb.interesting
+		.interesting__center.center
+			.interesting__wrapper
+				h2.interesting__title.h2 You may interested
+				.interesting__wrap
+					.interesting__slider.js-slider-interesting
+						.interesting__slide
+							+card("img/content/card-pic-1@2x.png", "img/content/card-pic-1.png", "status-green card__category", "yoga", false, "img/content/avatar-1.png", "7-days barre body", "First name Last name", "status-stroke-green card__level", "beginner", "7", "160")
+						.interesting__slide
+							+card("img/content/card-pic-2@2x.png", "img/content/card-pic-2.png", "status-red card__category", "fitness", true, "img/content/avatar-2.png", "Sweet and tone", "First name Last name", "status-stroke-red card__level", "Advanced", "7", "160")
+						.interesting__slide
+							+card("img/content/card-pic-3@2x.png", "img/content/card-pic-3.png", "status-red card__category", "fitness", false, "img/content/avatar-3.png", "Baseline Bootcamp", "First name Last name", "status-stroke-purple card__level", "Intermediate", "7", "160")
+						.interesting__slide
+							+card("img/content/card-pic-4@2x.png", "img/content/card-pic-4.png", "status-green card__category", "yoga", false, "img/content/avatar-4.png", "Beach run 7", "First name Last name", "status-stroke-green card__level", "beginner", "7", "160")
+						.interesting__slide
+							+card("img/content/card-pic-5@2x.png", "img/content/card-pic-5.png", "status-red card__category", "fitness", false, "img/content/avatar-5.png", "Train 360", "First name Last name", "status-stroke-purple card__level", "Intermediate", "7", "160")
+						.interesting__slide
+							+card("img/content/card-pic-6@2x.png", "img/content/card-pic-6.png", "status-green card__category", "yoga", false, "img/content/avatar-6.png", "Power Yoga Sculpt", "First name Last name", "status-stroke-red card__level", "Advanced", "7", "160")
+			.interesting__btns
+				button.button-stroke.interesting__button Browse more
+
+
+
+
+

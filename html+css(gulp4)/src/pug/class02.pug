@@ -1,0 +1,143 @@
+---
+title: Class02
+classClass: active
+classClass02: active
+---
+extends layouts/layout
+block content
+	.main3
+		.main3__center.center
+			.main3__wrap
+				.stage Train smarter. get stronger
+				h1.main3__title.h1 If you workout, Fitness Pro is made for you
+				.main3__text Track your workouts, get better results, and be the bestversion of you. Less thinking, more lifting.
+				a.button.main3__button(href="class02-details.html") Book a class
+			+scroll('programs')
+			.main3__gallery
+				.main3__preview
+					img.some-icon(srcSet="img/content/main-pic-1@2x.png 2x"
+						src="img/content/main-pic-1.png"
+						alt="Main")
+					img.some-icon-dark(srcSet="img/content/main-pic-dark-1@2x.png 2x"
+						src="img/content/main-pic-dark-1.png"
+						alt="Main")
+				.main3__preview(data-aos="animation-translate-up" data-aos-anchor=".main3__gallery")
+					img(srcSet="img/content/ball@2x.png 2x"
+						src="img/content/ball.png"
+						alt="Ball")
+				.main3__preview(data-aos="animation-translate-up" data-aos-delay="300" data-aos-anchor=".main3__gallery")
+					img(srcSet="img/content/ball-black@2x.png 2x"
+						src="img/content/ball-black.png"
+						alt="Ball black")
+				.main3__preview(data-aos="animation-translate-up" data-aos-delay="600" data-aos-anchor=".main3__gallery")
+					img(srcSet="img/content/dumbbells@2x.png 2x"
+						src="img/content/dumbbells.png"
+						alt="Dumbbells")
+	.programs
+		.programs__anchor#programs
+		.programs__center.center
+			.programs__top
+				h2.programs__title.h4 A special 1-on-1 workout program that gives you complete control over the volume for a perfect physique
+				.programs__info <strong class="programs__green">10% Discount</strong> if you’re already using the <strong class="programs__black">Fitness Pro</strong> on App Store
+			.programs__wrap
+				.programs__slider.js-slider-programs
+					.programs__slide(data-aos="animation-opacity")
+						.programs__item
+							.programs__icon(style="background-color: #45B26B;")
+								img(src="img/content/user.svg" alt="User")
+							.programs__subtitle Beginners
+							.programs__content A 7-days training program designed to boost your strength & endurance over the course of a week.
+							a.button-stroke.programs__button(href="class02-details.html") Book a class
+					.programs__slide(data-aos="animation-opacity")
+						.programs__item
+							.programs__icon(style="background-color: #9757D7;")
+								img(src="img/content/medal-1.svg" alt="Medal")
+							.programs__subtitle Advanced
+							.programs__content A 7-days training program designed to boost your strength & endurance over the course of a week.
+							a.button-stroke.programs__button(href="class02-details.html") Book a class
+					.programs__slide(data-aos="animation-opacity")
+						.programs__item
+							.programs__icon(style="background-color: #3772FF;")
+								img(src="img/content/lightning.svg" alt="Lightning")
+							.programs__subtitle Premium
+							.programs__content A 7-days training program designed to boost your strength & endurance over the course of a week.
+							a.button-stroke.programs__button(href="class02-details.html") Book a class
+					.programs__slide(data-aos="animation-opacity")
+						.programs__item
+							.programs__icon(style="background-color: #45B26B;")
+								img(src="img/content/user.svg" alt="User")
+							.programs__subtitle Beginners
+							.programs__content A 7-days training program designed to boost your strength & endurance over the course of a week.
+							a.button-stroke.programs__button(href="class02-details.html") Book a class
+					.programs__slide(data-aos="animation-opacity")
+						.programs__item
+							.programs__icon(style="background-color: #9757D7;")
+								img(src="img/content/medal-1.svg" alt="Medal")
+							.programs__subtitle Advanced
+							.programs__content A 7-days training program designed to boost your strength & endurance over the course of a week.
+							a.button-stroke.programs__button(href="class02-details.html") Book a class
+					.programs__slide(data-aos="animation-opacity")
+						.programs__item
+							.programs__icon(style="background-color: #3772FF;")
+								img(src="img/content/lightning.svg" alt="Lightning")
+							.programs__subtitle Premium
+							.programs__content A 7-days training program designed to boost your strength & endurance over the course of a week.
+							a.button-stroke.programs__button(href="class02-details.html") Book a class
+	.section.trainers.js-tabs
+		.trainers__center.center
+			h2.trainers__title.h2 Professional trainers
+			.trainers__info Stacks is a production-ready library of stackable content blocks built in React Native.
+			.trainers__nav
+				a.trainers__link.js-tabs-link.active(href="#") Yoga
+				a.trainers__link.js-tabs-link(href="#") Gym & Fitness
+				a.trainers__link.js-tabs-link(href="#") Gymnastics
+				a.trainers__link.js-tabs-link(href="#") Mindfulness
+			select.select.js-tabs-select
+				option Yoga
+				option Gym & Fitness
+				option Gymnastics
+				option Mindfulness
+			.trainers__container
+				.trainers__box.js-tabs-item
+					.trainers__list
+						mixin trainersItem(avatar, name, position)
+							.trainers__item(data-aos="animation-opacity")
+								a.trainers__element.js-popup-open(href="#popup-trainer")
+									.trainers__avatar
+										img(src=avatar alt="Avatar")
+									.trainers__name=name 
+									.trainers__position=position
+						+trainersItem("img/content/avatar-1.png", "Dariana Hammes", "Yoga Master")
+						+trainersItem("img/content/avatar-2.png", "Karianne Grimes", "Yoga Master")
+						+trainersItem("img/content/avatar-3.png", "Cathryn Blick", "Yoga Master")
+						+trainersItem("img/content/avatar-4.png", "Edna Hipert", "Yoga Master")
+						+trainersItem("img/content/avatar-5.png", "Kacie Rath", "Yoga Master")
+						+trainersItem("img/content/avatar-6.png", "Johathan Kuphal", "Yoga Master")
+						+trainersItem("img/content/avatar-1.png", "Raina Block", "Yoga Master")
+						+trainersItem("img/content/avatar-2.png", "Bulah Hammes", "Yoga Master")
+				.trainers__box.js-tabs-item
+					.trainers__list
+						+trainersItem("img/content/avatar-2.png", "Karianne Grimes", "Yoga Master")
+						+trainersItem("img/content/avatar-3.png", "Cathryn Blick", "Yoga Master")
+						+trainersItem("img/content/avatar-4.png", "Edna Hipert", "Yoga Master")
+						+trainersItem("img/content/avatar-5.png", "Kacie Rath", "Yoga Master")
+						+trainersItem("img/content/avatar-6.png", "Johathan Kuphal", "Yoga Master")
+				.trainers__box.js-tabs-item
+					.trainers__list
+						+trainersItem("img/content/avatar-1.png", "Dariana Hammes", "Yoga Master")
+						+trainersItem("img/content/avatar-2.png", "Karianne Grimes", "Yoga Master")
+						+trainersItem("img/content/avatar-3.png", "Cathryn Blick", "Yoga Master")
+						+trainersItem("img/content/avatar-4.png", "Edna Hipert", "Yoga Master")
+						+trainersItem("img/content/avatar-5.png", "Kacie Rath", "Yoga Master")
+						+trainersItem("img/content/avatar-6.png", "Johathan Kuphal", "Yoga Master")
+						+trainersItem("img/content/avatar-1.png", "Raina Block", "Yoga Master")
+				.trainers__box.js-tabs-item
+					.trainers__list
+						+trainersItem("img/content/avatar-4.png", "Edna Hipert", "Yoga Master")
+						+trainersItem("img/content/avatar-5.png", "Kacie Rath", "Yoga Master")
+						+trainersItem("img/content/avatar-6.png", "Johathan Kuphal", "Yoga Master")
+						+trainersItem("img/content/avatar-1.png", "Raina Block", "Yoga Master")
+	include partials/community
+	+popupTrainer
+
+

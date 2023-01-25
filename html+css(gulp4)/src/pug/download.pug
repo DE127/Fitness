@@ -1,0 +1,77 @@
+---
+title: Download
+classDownload: active
+---
+extends layouts/layout
+block content
+	.main2
+		.main2__center.center
+			.main2__col
+				.main2__preview
+					img.some-icon(srcSet="img/content/download-pic@2x.png 2x"
+						src="img/content/download-pic.png"
+						alt="Download bg")
+					img.some-icon-dark(srcSet="img/content/download-pic-dark@2x.png 2x"
+						src="img/content/download-pic-dark.png"
+						alt="Download bg")
+			.main2__col
+				.main2__wrap
+					.stage time to get fitness pro
+					h1.main2__title.h1 Fitness Pro for any device.
+					.main2__text Track your workouts, get better results, and be the best version of you. Less thinking, more lifting.
+					+subscription("Enter your email")
+	.section.platform
+		.platform__center.center
+			h2.platform__title.h2 Choose the plaform
+			.platform__list
+				.platform__item(data-aos="animation-opacity")
+					.platform__preview(style="background-color: #EF466F;")
+						img(src="img/content/apple.svg" alt="Apple")
+					.platform__details
+						.status-stroke-black.platform__status updated
+						.platform__subtitle Fitness Pro for Mac OS
+						.platform__description We realize ideas from simple.
+						button.button-small.platform__button Download
+							+i('arrow-down')
+				.platform__item(data-aos="animation-opacity")
+					.platform__preview(style="background-color: #45B26B;")
+						img(src="img/content/windows.svg" alt="Windows")
+					.platform__details
+						.status-green.platform__status coming soon
+						.platform__subtitle Fitness Pro for Windows
+						.platform__description We realize ideas from simple.
+						button.button-small.platform__button Download
+							+i('arrow-down')
+				.platform__item(data-aos="animation-opacity")
+					.platform__preview(style="background-color: #EF466F;")
+						img(src="img/content/mouse.svg" alt="Mouse")
+					.platform__details
+						.status-green.platform__status coming soon
+						.platform__subtitle Fitness Pro for Mac OS
+						.platform__description We realize ideas from simple.
+						button.button-small.platform__button Download
+							+i('arrow-down')
+				.platform__item(data-aos="animation-opacity")
+					.platform__preview(style="background-color: #3772FF;")
+						img(src="img/content/apple.svg" alt="Apple")
+					.platform__details
+						.status-green.platform__status coming soon
+						.platform__subtitle Fitness Pro for Mac OS
+						.platform__description We realize ideas from simple.
+						button.button-small.platform__button Download
+							+i('arrow-down')
+				.platform__item(data-aos="animation-opacity")
+					.platform__preview(style="background-color: #9757D7;")
+						img(src="img/content/android.svg" alt="Android")
+					.platform__details
+						.platform__subtitle Fitness Pro for Android
+						.platform__description We realize ideas from simple.
+						button.button-small.platform__button Download
+							+i('arrow-down')
+			.platform__btns
+				button.button-stroke.platform__button See the plan
+	include partials/community
+
+
+			
+				
